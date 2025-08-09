@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+import pygame;
+import time;
+
+surface = pygame.display.set_mode([340,200]);
+pygame.display.flip();
+def draw(c1,c2,c3,sx,sy,x,y):
+    pygame.draw.rect(surface, (c1,c2,c3), (sx,sy,x,y));
+surface.fill((255,255,255));
+draw(0,255,0, 0,0, 107,340);
+draw(255,255,255, 107,0, 107,340);
+draw(255,255,0, 233,0, 107,340);
+pygame.display.update();
+while True:
+    pass;
